@@ -1,0 +1,13 @@
+.date_span {
+  font-size: 10rem;
+  font-weight: 600;
+  display: flex;
+  gap: 5vw;
+
+  .date_start {
+    color: var(--textBlue);
+  }
+  .date_end {
+    color: var(--textPink);
+  }
+}

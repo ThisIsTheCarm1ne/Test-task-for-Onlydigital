@@ -1,0 +1,56 @@
+:root {
+  --borderColor: #d5d5d5;
+  --textBlue: #3279f9;
+  --textPink: #ff3c7c;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  position: absolute;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto 0 20%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+
+  .box {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--borderColor);
+  }
+  
+  .ring_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 502px; // Set the width of the Ring component
+    height: 502px;
+    z-index: 10;
+  }
+  .datespan_container {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .timeframe_btns_container {
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .slider_container {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 90%;
+    z-index: 1;
+  }
+}
